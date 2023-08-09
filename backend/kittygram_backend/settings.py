@@ -1,11 +1,13 @@
 import os
+
 from dotenv import load_dotenv
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv() 
-SECRET_KEY = os.getenv('TOKEN',  default='SUP3R-S3CR3T-K3Y-F0R-MY-PR0J3CT')
+load_dotenv()
+
+SECRET_KEY = os.getenv('TOKEN', default='SUP3R-S3CR3T-K3Y-F0R-MY-PR0J3CT')
 
 DEBUG = os.getenv('DEBUG', default=False)
 
@@ -115,7 +117,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated', 
+        'rest_framework.permissions.IsAuthenticated',
     ],
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
