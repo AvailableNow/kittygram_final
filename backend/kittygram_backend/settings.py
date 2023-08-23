@@ -12,10 +12,9 @@ SECRET_KEY = os.getenv('TOKEN', default='SUP3R-S3CR3T-K3Y-F0R-MY-PR0J3CT')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '84.201.139.117',
+    'https://kittygramm.ddns.net/',
     '127.0.0.1',
     'localhost',
-    'https://kittygramm.ddns.net/'
 ]
 
 INSTALLED_APPS = [
