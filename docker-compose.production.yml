@@ -29,8 +29,7 @@ services:
     ports:
       - 9000:80
     volumes:
-      - static:/static
-      - media:/media
+      - static:/staticfiles
     depends_on: 
       - kittygram_backend 
       - kittygram_frontend
