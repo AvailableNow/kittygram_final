@@ -22,7 +22,7 @@ mkdir kittygram
 cd kittygram
 ```
 
-Заполните файл .env следующими значениями, убедившись, что вы указали актуальные данные:
+## Заполните файл .env следующими значениями, убедившись, что вы указали актуальные данные:
 ```.env
 SECRET_KEY='указать секретный ключ'
 ALLOWED_HOSTS='указать имя или IP хоста'
@@ -36,7 +36,7 @@ DEBUG=False
 ```
 
 
-В папку проекта скачиваем файл .env и `docker-compose.production.yml` и запускаем его:
+## В папку проекта скачиваем файл .env и `docker-compose.production.yml` и запускаем его:
 
 ```bash
 sudo docker compose -f docker-compose.production.yml up
